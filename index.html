@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Signup Form</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="signup-form">
+            <p>Welcome back! 👋</p>
+            <h1>Sign up to your account</h1>
+            <form id="signup">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email"  required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" required>
+
+                <button type="button" onclick="showProfile()">Signup</button>
+
+                <p id="error-message" style="color: red;"></p>
+            </form>
+
+
+        </div>
+
+        <!-- dashboard section -->
+
+
+        <div id="dashboard" style="display: none;">
+            <h2>Signup Successful!</h2>
+            <div id="profile" style="display: none;">
+                <h3>Profile</h3>
+                <i class="fa-regular fa-user"></i>
+                <p><strong>Full Name:</strong> <span id="profileFullName"></span></p>
+                <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+                <p><strong>Token:</strong> <span id="profileToken"></span></p>
+                <p><strong>Password:</strong> <span id="profilePassword"></span></p>
+                <button onclick="showSignupForm()">Logout</button>
+            </div>
+        </div>
+
+        <!-- Git link  -->
+        <!-- <div class="me">&copy;
+            <a href=>Pickle</a>
+            &#10084;&#65039;
+        </div> -->
+    </div>
+
+
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
